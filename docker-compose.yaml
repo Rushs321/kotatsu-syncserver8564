@@ -2,8 +2,8 @@ services:
   db:
     image: mysql:8.0-debian
     environment:
-      MYSQL_USER: your_user
-      MYSQL_PASSWORD: your_password
+      MYSQL_USER: asd
+      MYSQL_PASSWORD: asd23
       MYSQL_DATABASE: kotatsu_db
       MYSQL_ALLOW_EMPTY_PASSWORD: true
     volumes:
@@ -21,8 +21,8 @@ services:
       - "8081:8080"
     environment:
       DATABASE_HOST: db
-      DATABASE_USER: your_user
-      DATABASE_PASSWORD: your_password
+      DATABASE_USER: asd
+      DATABASE_PASSWORD: asd23
       DATABASE_NAME: kotatsu_db
       DATABASE_PORT: 3306
       JWT_SECRET: your_secret
